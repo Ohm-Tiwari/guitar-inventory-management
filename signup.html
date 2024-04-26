@@ -103,20 +103,17 @@ button:hover {
 
 <script>
   let host = `http://localhost:8080`;
-  let remoteHost = "https://diner-pancakehouse-merge-latest-rz2i.onrender.com";
+  let remoteHost = "https://guitarservice-latest.onrender.com";
   let menuDiv = document.getElementById(`menu`);
   let message = "";
   document.getElementById("registrationForm").addEventListener("submit", async function(event){
-      event.preventDefault(); // Prevents the default form submission
+      event.preventDefault(); 
       const token = getTheToken();
 
-      // Collect user input
       var email = document.getElementById("email").value;
       var password = document.getElementById("psw").value;
       var username = document.getElementById("username").value;
   
-      
-      // Create user object
       const user = {
           email: email,
           username: username,

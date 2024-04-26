@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guitar Inventory Management</title>
+  <title>Guitar Management</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -33,7 +33,7 @@
 
     .header h1 {
       margin: 0;
-      color: black; /* Add this line to set the color to black */
+      color: black; 
 
     }
 
@@ -145,10 +145,10 @@
 
   <script>
   let host = configuration.host();
-      let remoteHost = "https://c322-spring2024-homework2-latest-y2km.onrender.com";
-       // Add an event listener to the form submission
+      let remoteHost = "https://guitarservice-latest.onrender.com";
+
        document.getElementById("addGuitarForm").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
     
     let message = "";
     let serialNumber = document.getElementById("serialNumber").value;

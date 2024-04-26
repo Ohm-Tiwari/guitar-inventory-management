@@ -30,8 +30,8 @@ async function getAll() {
     let topWood = document.getElementById('topWood').value.toLowerCase();
   
     if (builder === '' && model === '' && type === '' && backWood === '' && topWood === '') {
-      // If all input fields are empty, retrieve all guitars from the database
-      console.log("CHECKKKK")
+
+      console.log("CHECK")
       guitars = await getAll();
       console.log(guitars);
       displaySearchResults(guitars);
